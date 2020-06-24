@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 进错页面了，去next.hsyfz.ga!
+title: 华师一附中
 subtitle: ''
 description: ''
 keywords:
-author: xeonliu
-language: zh-Hans
+author: Xeonliu
+language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://hsyfz.ga
+url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -99,3 +99,13 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+  #search engine
+  search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+sitemap:
+    path: sitemap.xml
+    template: ./sitemap_template.xml
+    rel: false
